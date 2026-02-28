@@ -21,9 +21,12 @@
     </header>
     <section>
       <h2 id="sobre">Sobre mim</h2>
-      <img src="Imagens/Homem.jpg" alt="" />
+      <img
+        src="C:\Users\Jhonata Scarmagnani\Documents\Trilha Desenvolvimento de Software\Imagens\Homem.jpg"
+        alt=""
+      />
       <article>
-        <p>Olá, eu sou o Jhonata desenvolvedor Web full steck</p>
+        <p>Olá, eu sou o Jhonata desenvolvedor Web full stack</p>
       </article>
     </section>
     <aside>
@@ -44,8 +47,8 @@
     </section>
     <footer>
       <p>Direitos reservados</p>
-      <section>
-        <h2 id="contato">Contato</h2>
+      <section id="contato">
+        <h2>Contato</h2>
         <p>Tem um projeto em mente? entre em contato</p>
         <address>
           E-mail :
@@ -53,8 +56,36 @@
             >Jhonatascarmagnani@gmail.com</a
           >
           <br />
-          Telefone : <a href="tel: (48) 9 99002889">48999002889</a>
+
+          Telefone : <a href="tel: (48) 9 99002889">(48)9 9900-2889</a>
         </address>
+        <br />
+
+        <form action="">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required /> <br />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required /> <br />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" /> <br />
+
+          <label for="assunto">Assunto:</label>
+          <select name="assunto" id="assunto">
+            <option value="orçamento">Orçamento</option>
+            <option value="duvida">Duvida</option>
+            <option value="outros">Outros</option></select
+          ><br />
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" required></textarea><br />
+
+          <input type="checkbox" id="inscricao" name="inscricao" />
+          <label for="inscricao"
+            >Deseja receber minha newsletter? Fique por dentro.</label
+          ><br />
+          <input type="submit" value="Enviar mensagem" />
+        </form>
       </section>
     </footer>
   </body>
